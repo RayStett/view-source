@@ -9,15 +9,26 @@
                 background-color: pink;
                 color: green; 
                 h1{
-                    color: aquamarine; 
+                    color: #b5edcc; 
                     front-weight: bold; 
                     font-size: 220px;
                     letter-spacing: 12px; 
+                    /* negative margins decrease space between lines */
+                    margin-top: -80px;
+                    margin-bottom: -80px; 
                 }
                 div{
                     front-weight: bold; 
                     font-size: 60px; 
                     transform: rotate(2deg); 
+                }
+                .offest{
+                    /*Increases left margin to move elements to the right */ 
+                    margin-left: 30px; 
+                }
+                .offset span {
+                    display: inline-block; 
+                    transform: rotate(12deg); 
                 }
             }
         </style>
@@ -32,9 +43,14 @@
         <div>ThThTh</div>
         <div>ThThTh</div>
         <div>TTThhhh!!!!</div>
-        <div>Th!nk</div>
-        <h1>different</h1>
-        
+        <div>Th!nk</div>       
+        <h1 class="offset">
+            diff<span>e</span>r<span style="transform:rotate (-12deg);">
+                e</span>nt
+        </h1>
+        <div class="offset">
+        </div>
+
     </body>
     
 
